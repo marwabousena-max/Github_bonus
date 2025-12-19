@@ -1,0 +1,190 @@
+
+        /* h2{
+            color :aqua;
+            /* to make all the h2 the same color (internal css) */
+        /* }  */
+
+/* selector{
+    property:value;
+    property:value;
+} */
+
+/* body{
+    font-size:48px;
+} */
+
+
+body{
+    background-image: url(WallpaperForWeb.jpg);
+    /* betekarar 3ashan el space el fadya */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* yekhaly el bg size yecover el safha kolaha */
+}
+
+
+h2{
+    text-decoration: underline dotted;
+    font-size:30px;
+    /* 50% of the parent(body) font size(default of the body)==16 */
+    font-style:oblique;
+    font-weight:100;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-variant: small-caps;
+    /* small-caps==font upper case */
+    color:rgb(146, 25, 253);
+    /* alpha=perecentage of transparency of the color(0-1) */
+    border-style:solid;
+    border-color:rgb(80, 64, 230);
+    border-width:9px;
+    /* border:solid plum 9px 8px 9px ; */
+    /* badal ma akteb multiple line */
+    /* border-top: dashed 7px blue;
+    border-left: dashed 7px blue;
+     */
+    padding:30px 20px 10px 5px;
+    margin:30px 20px 10px 5px ;
+
+}
+/* padding ==space between the content and the border */
+
+.class1{
+    font-style:italic;
+    color:rgb(210, 194, 224);
+}
+ol{
+    font-weight: 700;
+    font-size:20px;
+    color:bisque;
+}
+#id1{
+    color:red;
+}
+a:link{
+    color:rgb(2, 5, 37);
+    text-decoration:none;
+    text-decoration: underline;
+}
+a:visited{
+    color:brown;
+
+}
+a:hover{
+    color:aqua;
+    font-size: 22px;
+}
+a:active{
+    color:red;
+    text-decoration: underline;
+}
+.div2{
+    background:aqua;
+}
+p{
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+}
+.input{
+    color:aqua;
+}
+label{
+    font-weight: bold;
+    font-size: 30px;
+    font-style: italic;
+}
+h3{
+    display:inline-block;
+    /* bakhaly el element matakhodsh el satr kolo+hawaelha margin */
+}
+.invisible{
+    visibility:hidden;
+    display:none;
+    /* law 3aiza asheelo khales */
+}
+.overflow{
+    border:solid blue 5px;
+    width:250px;
+    height:150px;
+    overflow:auto;
+/*   law mehtaga width aw height scroll bar(hassab el mehatagah) */
+}
+.container{
+    background: rgb(235, 235, 133);
+    padding:6px;
+    margin:12px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    /* short hand for flex direction and wrap */
+    /* min-height:350px;
+    justify-content: space-evenly;
+    align-items:center; */
+}
+/* } */
+/* .container div{
+    background: rgba(0, 0, 0, 0.3) ;
+    width:150px;
+    height:150px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+
+}
+.child1{
+    background: blanchedalmond;
+
+}
+.child2{
+    background: rgb(216, 150, 52);
+
+}
+
+.child3{
+    background: rgb(161, 102, 13);
+
+}
+
+.child4{
+    background: rgb(85, 52, 4);
+
+} */
+.container{
+    background: rgb(243, 237, 238);
+    width:600px;
+    height:500px;
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "sidebar content1"
+    "footer footer";
+    row-gap: 5px;
+    column-gap: 5px;
+    padding: 8px;
+ } 
+
+.header{
+    grid-area: header;
+    background: blue;
+    text-align: center;
+
+}
+.content{
+    grid-area:content1;
+    background:rgb(95, 95, 245) ;
+    text-align: center;
+}
+.sidebar{
+    grid-area: sidebar;
+    background: rgb(150, 150, 221);
+    text-align: center;
+}
+.footer{
+    grid-area:footer;
+    color:white;
+    background: rgb(0, 0, 59);
+    text-align: center;
+}
